@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WLF-8l-oX4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Nm9-lp-XwK">
+            <objects>
+                <navigationController id="WLF-8l-oX4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yEG-Vp-8MQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SO1-9I-kDD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xE2-Fk-KHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-670" y="110"/>
+        </scene>
+        <!--Desafio Mobile - Arthur Silva-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Desafio Mobile - Arthur Silva" id="BYZ-38-t0r" customClass="ViewController" customModule="Desafio_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wEh-T8-NOZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wEh-T8-NOZ" secondAttribute="trailing" id="Cpb-jC-h4U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wEh-T8-NOZ" secondAttribute="bottom" id="R0w-4m-pTQ"/>
+                            <constraint firstItem="wEh-T8-NOZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZJ3-aN-bDm"/>
+                            <constraint firstItem="wEh-T8-NOZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iaj-eE-PYP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v4a-Yd-xU6"/>
+                    <connections>
+                        <outlet property="tableView" destination="wEh-T8-NOZ" id="R7s-mo-3j7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="110.19490254872565"/>
+        </scene>
+        <!--Filters-->
+        <scene sceneID="LPJ-kD-B55">
+            <objects>
+                <viewController storyboardIdentifier="FilterViewController" id="pZA-kY-KzG" customClass="FilterViewController" customModule="Desafio_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RvN-ST-OPU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yup-2M-hc8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="158"/>
+                                <color key="backgroundColor" red="0.71372549019607845" green="0.82745098039215681" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pen-Hl-fD7">
+                                <rect key="frame" x="0.0" y="158" width="375" height="509"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8c-Gk-l3n">
+                                <rect key="frame" x="16" y="55" width="156" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="nRA-kl-hlq"/>
+                                    <constraint firstAttribute="height" constant="55" id="tRQ-Im-mEc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CbJ-wt-n9f">
+                                <rect key="frame" x="16" y="118" width="343" height="29"/>
+                                <segments>
+                                    <segment title="language_id"/>
+                                    <segment title="module_id"/>
+                                </segments>
+                                <color key="tintColor" red="0.96078431372549022" green="1" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f6l-HZ-L9S" firstAttribute="trailing" secondItem="CbJ-wt-n9f" secondAttribute="trailing" constant="16" id="7fU-fA-OBg"/>
+                            <constraint firstItem="Yup-2M-hc8" firstAttribute="top" secondItem="RvN-ST-OPU" secondAttribute="top" id="8wC-pw-vdj"/>
+                            <constraint firstItem="S8c-Gk-l3n" firstAttribute="leading" secondItem="f6l-HZ-L9S" secondAttribute="leading" constant="16" id="GoN-2z-Swn"/>
+                            <constraint firstItem="Pen-Hl-fD7" firstAttribute="top" secondItem="Yup-2M-hc8" secondAttribute="bottom" id="Jo2-rK-6Yv"/>
+                            <constraint firstItem="Yup-2M-hc8" firstAttribute="trailing" secondItem="f6l-HZ-L9S" secondAttribute="trailing" id="KHR-Y1-e1c"/>
+                            <constraint firstItem="Pen-Hl-fD7" firstAttribute="leading" secondItem="f6l-HZ-L9S" secondAttribute="leading" id="LLG-ef-Hd8"/>
+                            <constraint firstItem="CbJ-wt-n9f" firstAttribute="top" secondItem="S8c-Gk-l3n" secondAttribute="bottom" constant="8" id="WX9-R0-eYu"/>
+                            <constraint firstItem="f6l-HZ-L9S" firstAttribute="trailing" secondItem="S8c-Gk-l3n" secondAttribute="trailing" constant="203" id="Zoa-lh-2M8"/>
+                            <constraint firstItem="S8c-Gk-l3n" firstAttribute="top" secondItem="f6l-HZ-L9S" secondAttribute="top" constant="35" id="nl0-41-xdm"/>
+                            <constraint firstItem="CbJ-wt-n9f" firstAttribute="leading" secondItem="f6l-HZ-L9S" secondAttribute="leading" constant="16" id="ovk-Lo-UaK"/>
+                            <constraint firstItem="Pen-Hl-fD7" firstAttribute="top" secondItem="CbJ-wt-n9f" secondAttribute="bottom" constant="12" id="pZV-IC-bc7"/>
+                            <constraint firstItem="Yup-2M-hc8" firstAttribute="leading" secondItem="f6l-HZ-L9S" secondAttribute="leading" id="qF6-dE-l8v"/>
+                            <constraint firstItem="Pen-Hl-fD7" firstAttribute="trailing" secondItem="f6l-HZ-L9S" secondAttribute="trailing" id="qqA-Xk-z60"/>
+                            <constraint firstItem="f6l-HZ-L9S" firstAttribute="bottom" secondItem="Pen-Hl-fD7" secondAttribute="bottom" id="rcy-tn-k9V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f6l-HZ-L9S"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Filters" id="QNQ-2t-4Z5"/>
+                    <connections>
+                        <outlet property="scFilterId" destination="CbJ-wt-n9f" id="mfN-rv-Tdg"/>
+                        <outlet property="tableView" destination="Pen-Hl-fD7" id="qvD-t0-56b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r8e-B8-TWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872.79999999999995" y="108.39580209895054"/>
+        </scene>
+    </scenes>
+</document>
