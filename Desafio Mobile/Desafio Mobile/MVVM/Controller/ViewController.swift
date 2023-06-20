@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITableViewDelegate {
     }
     
     @objc func openFilterViewController() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil) // Substitua "Main" pelo nome do seu storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: nil) 
         guard let filterViewController = storyboard.instantiateViewController(withIdentifier: "FilterViewController") as? FilterViewController else {
             return
         }
